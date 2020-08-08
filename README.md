@@ -6,6 +6,6 @@ The **Terraform Kung-fu** project contains quickstart examples and modules to us
 
 ### Microsoft Azure
 
-- [Azure Databricks](azure-databricks/readme.md)
-- [Azure IoT Hub](azure-iot-hub/readme.md)
-- [Azure Storage](azure-storage/readme.md)
+- [Azure Databricks](azure/quickstarts/azure-databricks/readme.md)
+- [Azure IoT Hub](azure/quickstarts/azure-iot-hub/readme.md)
+- [Azure Storage](azure/quickstarts/azure-storage/readme.md)
