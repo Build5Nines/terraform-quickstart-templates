@@ -13,7 +13,7 @@
 # - Update the local variables to configure the resource
 # #################################################################################
 # HELPFUL RESOURCES:
-# - https://www.terraform.io/docs/providers/azurerm/r/databricks_workspace.html
+# - https://build5nines.com/get-started-with-terraform-on-microsoft-azure/
 # #################################################################################
 
 provider "azurerm" {

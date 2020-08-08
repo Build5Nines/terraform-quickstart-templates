@@ -13,7 +13,7 @@
 # - Update the local variables to configure the resource
 # #################################################################################
 # HELPFUL RESOURCES:
-# - https://build5nines.com/terraform-create-azure-iot-hub-and-dps/
+# - https://build5nines.com/get-started-with-terraform-on-microsoft-azure/
 # #################################################################################
 
 provider "azurerm" {
