@@ -27,5 +27,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "b59s_rg" {
   location = "eastus2"
-  name     = "b59s-rg"
+  name     = "b59s-eastus2-rg"
 }
