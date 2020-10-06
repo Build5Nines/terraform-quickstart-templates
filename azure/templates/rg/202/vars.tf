@@ -18,6 +18,6 @@
 
 variable "locations" {
   type        = list(string)
-  default     = ["centralus", "eastus2"]
+  default     = ["centralus", "eastus", "eastus2", "westus"]
   description = "locations for the resource groups"
 }

@@ -18,4 +18,6 @@
 
 module "rg" {
   source = "./modules/rg"
+  
+  locations = []
 }

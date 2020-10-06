@@ -10,14 +10,38 @@
 # - <fill in purpose>
 # #################################################################################
 # USAGE:
-# - Update the variable to configure the resource
+# - Update the local variables to configure the resource
 # #################################################################################
 # HELPFUL RESOURCES:
 # - <add-links>
 # #################################################################################
 
-variable "location" {
-  type        = string
-  default     = "eastus2"
-  description = "location for the resource group"
+provider "azurerm" {
+  # AzureRM provider 2.x
+  version = "~>2.0"
+  # v2.x required "features" block
+  features {}
+  # subscription_id = "YOUR_SUBSCRIPTION_ID_HERE" optional if using the CLI
+  # tenant_id       = "YOUR_TENANT_ID_HERE" optional if using the CLI
 }
+
+resource "azurerm_resource_group" "b59s_rg" {
+  location = "eastus2"
+  name     = "b59s-eastus2-rg"
+}
+
+resource "azurerm_virtual_network" "b59s_vnet" {
+  address_space       = ["172.16.0.0/16"]
+  location            = "eastus2"
+  name                = "b59s-eastus2-vnet"
+  resource_group_name = azurerm_resource_group.b59s_rg.name
+  subnet {
+    address_prefix = "172.16.0.0/24"
+    name           = "APPS"
+  }
+  subnet {
+    address_prefix = "172.16.1.0/24"
+    name           = "DATA"
+  }
+}
+
