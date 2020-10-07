@@ -17,7 +17,7 @@
 # #################################################################################
 
 module "vnet_centralus" {
-  source = "./modules/vnet"
+  source = "../../../modules/vnet"
 
   resource_group_name = module.rg_centralus.rg_name
   location            = local.primary_location
@@ -25,7 +25,7 @@ module "vnet_centralus" {
 }
 
 module "vnet_eastus2" {
-  source = "./modules/vnet"
+  source = "../../../modules/vnet"
 
   resource_group_name = module.rg_eastus2.rg_name
   location            = local.secondary_location

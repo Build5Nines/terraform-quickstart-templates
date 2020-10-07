@@ -22,13 +22,13 @@ locals {
 }
 
 module "rg_centralus" {
-  source = "./modules/rg"
+  source = "../../../modules/rg"
 
   location = local.primary_location
 }
 
 module "rg_eastus2" {
-  source = "./modules/rg"
+  source = "../../../modules/rg"
 
   location = local.secondary_location
 }
