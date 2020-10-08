@@ -7,13 +7,16 @@
 # Please, proceed with extreme caution!
 # #################################################################################
 # PURPOSE:
-# - <fill in purpose>
+# - 301 - Create a resource using a shared module. Take note that the module path
+#         must be set correctly. Update the locals and variables.
 # #################################################################################
 # USAGE:
-# - Update the local variables to configure the resource
+# - Run terraform in this directory to create the resource(s), make sure path to
+#   the module is set correctly if moving the folders to your own project.
 # #################################################################################
 # HELPFUL RESOURCES:
-# - <add-links>
+# - https://build5nines.com/?s=terraform
+# - https://www.terraform.io/docs/providers/azurerm/r/virtual_network.html
 # #################################################################################
 
 provider "azurerm" {

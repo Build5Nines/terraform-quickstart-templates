@@ -7,13 +7,14 @@
 # Please, proceed with extreme caution!
 # #################################################################################
 # PURPOSE:
-# - <fill in purpose>
+# - 101 - Create a resource using just one file
 # #################################################################################
 # USAGE:
-# - Update the local variables to configure the resource
+# - Run this one file using terraform to create the resource
 # #################################################################################
 # HELPFUL RESOURCES:
-# - <add-links>
+# - https://build5nines.com/?s=terraform
+# - https://www.terraform.io/docs/providers/azurerm/r/virtual_network.html
 # #################################################################################
 
 provider "azurerm" {

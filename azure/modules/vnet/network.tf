@@ -7,13 +7,19 @@
 # Please, proceed with extreme caution!
 # #################################################################################
 # PURPOSE:
-# - <fill in purpose>
+# - This is a shared module folder. These are the modules referenced in the 
+#   [provider_name]/templates/resource_type/301 folder.
 # #################################################################################
 # USAGE:
-# - Update the local variables to configure the resource
+# - Run terraform in the [provider_name]/templates/resource_type/301 directory of 
+#   your choice to create that resource(s) referencing this and other modules.
+# - Make sure path to the module in [provider_name]/templates/resource_type/301
+#   is set correctly if moving the folders to your own project.
+# - The module must be downloaded during a terraform init.
 # #################################################################################
 # HELPFUL RESOURCES:
-# - <add-links>
+# - https://build5nines.com/?s=terraform
+# - https://www.terraform.io/docs/configuration/modules.html
 # #################################################################################
 
 resource "azurerm_virtual_network" "b59s_vnet" {

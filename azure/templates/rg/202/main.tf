@@ -7,15 +7,15 @@
 # Please, proceed with extreme caution!
 # #################################################################################
 # PURPOSE:
-# - Create multiple resource groups using a list in the locals
+# - 201 - Create a resource using locals and variables
 # #################################################################################
 # USAGE:
-# - Update the local variables to configure the resource
+# - Run terraform in this directory to create the resource(s)
 # #################################################################################
 # HELPFUL RESOURCES:
-# - <add-links>
+# - https://build5nines.com/?s=terraform
+# - https://www.terraform.io/docs/providers/azurerm/r/resource_group.html
 # #################################################################################
-
 locals {
   rg_prefix = "b59s"
 }
