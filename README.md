@@ -9,6 +9,7 @@ The **Build5Nines: Terraform Kung-fu** project contains quickstart examples and 
 - [Azure Databricks](azure/quickstarts/azure-databricks/readme.md)
 - [Azure IoT Hub](azure/quickstarts/azure-iot-hub/readme.md)
 - [Azure Storage](azure/quickstarts/azure-storage/readme.md)
+- [Azure Kubernetes Service](azure/quickstarts/azure-kubernetes-service)
 
 ## Helpful Articles
 
