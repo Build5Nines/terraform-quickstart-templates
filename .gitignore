@@ -113,3 +113,4 @@ fabric.properties
 /vnet.tf
 
 .idea/.idea.tf-kung-fu-starter.dir/
+**/.DS_Store
