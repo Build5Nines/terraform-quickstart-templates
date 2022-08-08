@@ -14,6 +14,7 @@ The **Build5Nines: Terraform Kung-fu** project contains quickstart examples and 
 ## Helpful Articles
 
 - [Get Started with Terraform on Azure](https://build5nines.com/get-started-with-terraform-on-microsoft-azure/)
+- [Terraform Modules: Create Reusable Infrastructure as Code](https://build5nines.com/terraform-modules-create-reusable-infrastructure-as-code/)
 - [Terraform Feature Flags and Environment Toggle Design Patterns](https://build5nines.com/terraform-feature-flags-environment-toggle-design-patterns/)
 - [Terraform: Create Azure IoT Hub and Device Provisioning Service (DPS)](https://build5nines.com/terraform-create-azure-iot-hub-and-dps/)
 - [Terraform: Create an Azure Kubernetes Cluster](https://build5nines.com/terraform-create-an-aks-cluster/)
