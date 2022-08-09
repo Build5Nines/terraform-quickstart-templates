@@ -1,1 +1,0 @@
-This directory contains reusable "templates" of Terraform projects that you can easily reuse to deploy workloads.
