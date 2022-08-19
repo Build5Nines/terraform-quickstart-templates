@@ -8,3 +8,4 @@ In addition to the Terraform Tips code examples found in this folder, the follow
 
 - [Terraform Expression: Get List Object by Attribute Value Lookup](https://build5nines.com/terraform-expression-get-list-object-by-attribute-value-lookup/) by Chris Pietschmann
 - [Terraform: If/Else Conditional Resource and Module Deployment](https://build5nines.com/terraform-if-else-conditional-resource-and-module-deployment/) by Chris Pietschmann
+- [Terraform Feature Flags and Environment Toggle Design Patterns](https://build5nines.com/terraform-feature-flags-environment-toggle-design-patterns/) by Chris Pietschmann
