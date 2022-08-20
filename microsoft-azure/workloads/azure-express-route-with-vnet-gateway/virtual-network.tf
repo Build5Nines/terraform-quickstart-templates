@@ -14,7 +14,7 @@ resource azurerm_subnet "gateway_subnet" {
     name                 = "GatewaySubnet"
     resource_group_name = azurerm_resource_group.rg.name
 
-    virtual_network_name = aazurerm_virtual_network.virtual_network.name
+    virtual_network_name = azurerm_virtual_network.virtual_network.name
     address_prefixes     = ["172.16.0.0/24"]
 
     enforce_private_link_endpoint_network_policies = true

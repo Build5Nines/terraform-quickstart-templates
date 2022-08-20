@@ -14,7 +14,7 @@ resource azurerm_express_route_circuit "express_route" {
         family = "MeteredData" 
     }
 
-    tags = local.source_tags
+    tags = local.tags
 }
 
 # NOTE:
