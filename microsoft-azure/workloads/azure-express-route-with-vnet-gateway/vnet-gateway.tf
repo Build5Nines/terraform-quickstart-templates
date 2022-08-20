@@ -7,7 +7,7 @@ resource azurerm_virtual_network_gateway "virtual_network_gateway" {
     type     = "ExpressRoute"
     vpn_type = "PolicyBased"
 
-    sku           = "HighPerformnce"
+    sku           = "HighPerformance"
     active_active = false
     enable_bgp    = false
 
