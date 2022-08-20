@@ -32,4 +32,5 @@ resource azurerm_express_route_circuit_peering "express_route_peering" {
     primary_peer_address_prefix   = "10.0.0.0/30"
     secondary_peer_address_prefix = "10.0.0.0/30"
     vlan_id                       = 100
+    peer_asn                      = 100
 }
