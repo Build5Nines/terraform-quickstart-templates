@@ -27,7 +27,7 @@ resource azurerm_virtual_network_gateway_connection "virtual_network_gateway_con
 
     type                            = "ExpressRoute"
     virtual_network_gateway_id      = azurerm_virtual_network_gateway.virtual_network_gateway.id
-    peer_virtual_network_gateway_id = azurerm_express_route_circuit.express_route.id
+    express_route_circuit_id        = azurerm_express_route_circuit.express_route.id
     
     tags = local.tags
 }
