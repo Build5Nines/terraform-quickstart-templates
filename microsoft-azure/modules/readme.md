@@ -32,9 +32,9 @@ module "my_resource_group" {
     # Using HTTPS
     source = "github.com/Build5Nines/terraform-quickstart-templates.git//microsoft-azure/modules/azure_resource_group"
 
-    name = "name-rg"
+    name     = "name-rg"
     location = "eastus"
-    tags = {
+    tags     = {
         source = "terraform"
     }
 }
