@@ -9,12 +9,12 @@ _Currently, the project is mostly focused on using the `azurerm` Terraform Provi
 This project contains helpful Terraform examples and templates that are organized in the following folder structure:
 
 - **Microsoft Azure**
-  - [`microsoft-azure`](microsoft-azure) - This is where the Microsoft Azure resource specific quickstarts and other templates reside.
-    - [`microsoft-azure/modules`](microsoft-azure/modules) - These are reusable Terraform Modules for provisioning specific Microsoft Azure resources.
-    - [`microsoft-azure/quickstarts`](microsoft-azure/quickstarts) - These are sample Terraform templates that can be used to quickly provision single or sets of Microsoft Azure resources.
-    - [`microsoft-azure/workloads`](microsoft-azure/workloads) - These are example Terraform workload templates that model specific workload deployments to Microsoft Azure.
+  - [`microsoft-azure`](microsoft-azure/readme.md) - This is where the Microsoft Azure resource specific quickstarts and other templates reside.
+    - [`microsoft-azure/modules`](microsoft-azure/modules/readme.md) - These are reusable Terraform Modules for provisioning specific Microsoft Azure resources.
+    - [`microsoft-azure/quickstarts`](microsoft-azure/quickstarts/readme.md) - These are sample Terraform templates that can be used to quickly provision single or sets of Microsoft Azure resources.
+    - [`microsoft-azure/workloads`](microsoft-azure/workloads/readme.md) - These are example Terraform workload templates that model specific workload deployments to Microsoft Azure.
 - **Generic Terraform**
-  - [`terraform-tips`](terraform-tips) - This is where helpful tips and best practice examples of Terraform code that are not cloud provider specific are located.
+  - [`terraform-tips`](terraform-tips/readme.md) - This is where helpful tips and best practice examples of Terraform code that are not cloud provider specific are located.
 
 ## Related Helpful Articles
 
