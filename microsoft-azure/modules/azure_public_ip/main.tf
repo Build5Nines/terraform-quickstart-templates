@@ -57,7 +57,7 @@ resource azurerm_public_ip ip {
 
   domain_name_label   = var.domain_name_label
 
-  tags                = local.tags
+  tags                = var.tags
 
 }
 
