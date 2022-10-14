@@ -2,7 +2,7 @@
 
 These are reusable Terraform Modules for provisioning specific Microsoft Azure resources.
 
-## Use these Modules
+## Example Usage
 
 Here's a simple example of using one of these modules in a Terraform project. Simply use the `source` attribute on the `module` object in Terraform to specify which module to pull in and use.
 
