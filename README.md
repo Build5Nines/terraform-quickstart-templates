@@ -10,6 +10,7 @@ This project contains helpful Terraform examples and templates that are organize
 
 - **Microsoft Azure**
   - [`microsoft-azure`](microsoft-azure) - This is where the Microsoft Azure resource specific quickstarts and other templates reside.
+    - [`microsoft-azure/modules`](microsoft-azure/modules) - These are reusable Terraform Modules for provisioning specific Microsoft Azure resources.
     - [`microsoft-azure/quickstarts`](microsoft-azure/quickstarts) - These are sample Terraform templates that can be used to quickly provision single or sets of Microsoft Azure resources.
     - [`microsoft-azure/workloads`](microsoft-azure/workloads) - These are example Terraform workload templates that model specific workload deployments to Microsoft Azure.
 - **Generic Terraform**
