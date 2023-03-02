@@ -61,7 +61,7 @@ resource azurerm_app_service_plan "primary" {
   }
 }
 
-# Create an Azure Function App
+# Create an Azure Function App on Linux
 resource azurerm_function_app "primary" {
   name                       = local.function_app_name
   resource_group_name        = azurerm_resource_group.primary.name
