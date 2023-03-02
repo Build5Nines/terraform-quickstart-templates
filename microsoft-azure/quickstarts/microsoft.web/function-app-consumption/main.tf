@@ -27,9 +27,9 @@ locals {
     resource_group_name       = "b59_functions"
     location                  = "eastus"
     
-    function_app_name                 = "b59_func_app"
-    app_service_plan_name             = "b59_func_app_plan"
-    storage_account_name              = "b59funcappsa"
+    function_app_name         = "b59_func_app"
+    app_service_plan_name     = "b59_func_app_plan"
+    storage_account_name      = "b59funcappsa"
 }
 
 # Create a resource group
