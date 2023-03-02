@@ -29,7 +29,7 @@ locals {
     
     function_app_name                 = "b59_func_app"
     app_service_plan_name             = "b59_func_app_plan"
-    function_app_storage_account_name = "b59funcappsa"
+    storage_account_name              = "b59funcappsa"
 }
 
 # Create a resource group
@@ -40,7 +40,7 @@ resource "azurerm_resource_group" "primary" {
 
 # Create Azure Storage Account required for Function App
 resource azurerm_storage_account "primary" {
-  name                     = local.function_app_storage_account_name
+  name                     = local.storage_account_name
   resource_group_name      = azurerm_resource_group.primary.name
   location                 = azurerm_resource_group.primary.location
   account_tier             = "Standard"
