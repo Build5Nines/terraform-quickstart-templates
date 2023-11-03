@@ -1,0 +1,7 @@
+{
+    "environment": "staging",
+    "website": "build5nines.com",
+    "author": "Chris Pietschmann",
+    "config_val_string": "abc",
+    "config_val_number": 222
+}
