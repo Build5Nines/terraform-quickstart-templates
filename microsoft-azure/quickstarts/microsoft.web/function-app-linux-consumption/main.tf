@@ -14,6 +14,7 @@
 # #################################################################################
 # HELPFUL RESOURCES:
 # - https://build5nines.com/get-started-with-terraform-on-microsoft-azure/
+# - https://build5nines.com/terraform-deploy-azure-function-app-with-consumption-plan/
 # #################################################################################
 
 provider "azurerm" {
