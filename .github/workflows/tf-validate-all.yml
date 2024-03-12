@@ -1,0 +1,22 @@
+name: Terraform Validate - All
+
+on:
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: action/checkout@v3
+
+    - uses: hashicorp/setup-terraform@v3
+
+    - name: Validate All Terraform
+      run: ./.github/tf-validate-all.sh ./
+      working-directory: ${{ github.workspaces }}
+        
