@@ -31,7 +31,7 @@ variable always_on {
 
 variable app_settings { type = map(string) }
 
-version version {
+variable runtime_version {
     type = string
     default = "~3"
 }
@@ -56,7 +56,7 @@ resource azurerm_function_app app {
     always_on = var.always_on
   }
 
-  version      = var.version
+  version      = var.runtime_version
   app_settings = var.app_settings
 
   tags = var.tags
