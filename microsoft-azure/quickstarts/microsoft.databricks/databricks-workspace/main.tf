@@ -16,10 +16,17 @@
 # - https://build5nines.com/get-started-with-terraform-on-microsoft-azure/
 # #################################################################################
 
+terraform {
+  required_providers {
+    # AzureRM provider 3.x
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~>3.0.0"
+    }
+  }
+}
+
 provider "azurerm" {
-  # AzureRM provider 2.x
-  version = "~>2.0"
-  # v2.x required "features" block
   features {}
 }
 
