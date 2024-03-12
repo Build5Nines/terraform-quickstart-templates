@@ -3,7 +3,7 @@ terraform {
     # AzureRM provider 3.x
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>3.0.0"
+      version = "~>3"
     }
   }
 }
@@ -24,7 +24,7 @@ variable sku {
     default     = "Standard_AzureFrontDoor"
 
     validation {
-        condition     = var.example_variable == "Standard_AzureFrontDoor" || var.example_variable == "Premium_AzureFrontDoor"
+        condition     = var.sku == "Standard_AzureFrontDoor" || var.sku == "Premium_AzureFrontDoor"
         error_message = "SKU must be either 'Standard_AzureFrontDoor' or 'Premium_AzureFrontDoor'."
     }
 }
