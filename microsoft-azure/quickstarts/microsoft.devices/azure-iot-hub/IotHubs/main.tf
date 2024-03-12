@@ -34,7 +34,7 @@ locals {
     resource_group_name = "b59_iot"
     location            = "westus"
     
-    iot_hub_name        = "b59_iot_hub"
+    iot_hub_name        = "b59-iot-hub"
     iot_hub_sku         = "S1"
     iot_hub_capacity    = 1
 }
