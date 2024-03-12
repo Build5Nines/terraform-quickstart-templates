@@ -52,4 +52,13 @@ jobs:
           exit 1
         fi
       working-directory: ${{ github.workspaces }}
+
+    - name: Validate - Tips
+      run: |
+        ./.github/tf-validate-all.sh ./terraform-tips
+        if [ $? -ne 0 ]; then
+          echo "Validation failed"
+          exit 1
+        fi
+      working-directory: ${{ github.workspaces }}
         
