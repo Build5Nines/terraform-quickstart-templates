@@ -7,14 +7,20 @@ on:
   #   branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  validate:
+  terraform:
+    name: 'Terraform'
     runs-on: ubuntu-latest
 
     steps:
-    - uses: action/checkout@v4
+    - name: action/checkout
+      uses: action/checkout@v4
 
-    - uses: hashicorp/setup-terraform@v3
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
 
     - name: Validate All Terraform
       run: ./.github/tf-validate-all.sh ./
