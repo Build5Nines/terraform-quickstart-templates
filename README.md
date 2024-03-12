@@ -25,4 +25,3 @@ The following are a few helpful related articles to working with Terraform code.
 - [Terraform Modules: Create Reusable Infrastructure as Code](https://build5nines.com/terraform-modules-create-reusable-infrastructure-as-code/) by Chris Pietschmann
 - [Terraform Feature Flags and Environment Toggle Design Patterns](https://build5nines.com/terraform-feature-flags-environment-toggle-design-patterns/) by Chris Pietschmann
 - [Terraform: Create Azure IoT Hub and Device Provisioning Service (DPS)](https://build5nines.com/terraform-create-azure-iot-hub-and-dps/) by Chris Pietschmann
-- [Terraform: Create an Azure Kubernetes Cluster](https://build5nines.com/terraform-create-an-aks-cluster/) by Jim Counts
