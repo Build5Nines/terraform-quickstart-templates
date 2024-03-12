@@ -10,14 +10,14 @@ contains_tf_file() {
   fi
 }
 
-# Function to initialize Terraform in a folder
-terraform_init() {
+# Terraform Validate
+terraform_validate() {
   local folder="$1"
   echo "Initializing Terraform in: $folder"
-  (cd "$folder" && terraform init) || { echo "ERROR: Terraform init failed in $fodler"; return 1; }
+  (cd "$folder" && terraform init) || { echo "ERROR: Terraform init failed in $folder"; return 1; }
 
   echo "Validating Terraform in $folder"
-  (cd "$folder" && terraform validate) || { echo "ERROR: Terraform validate failed in $fodler"; return 1; }
+  (cd "$folder" && terraform validate) || { echo "ERROR: Terraform validate failed in $folder"; return 1; }
 }
 
 # Recursive function to iterate through subfolders
@@ -28,7 +28,7 @@ iterate_subfolders() {
   for subfolder in "$current_folder"/*; do
     if [ -d "$subfolder" ]; then
       if contains_tf_file "$subfolder"; then
-        terraform_init "$subfolder" || error_flag=1
+        terraform_validate "$subfolder" || error_flag=1
       fi
       iterate_subfolders "$subfolder" || error_flag=1
     fi
@@ -52,4 +52,8 @@ fi
 
 # Perform the iteration and check for errors
 iterate_subfolders "$root_folder"
+# Check the result of the function and exit accordingly
+if [ $? -eq 1 ]; then
+    exit 1
+fi
 exit 0
