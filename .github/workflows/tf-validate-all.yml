@@ -30,7 +30,7 @@ jobs:
       run: | 
         ./.github/tf-validate-all.sh ./microsoft-azure/modules
         if [ $? -ne 0 ]; then
-          echo "Validation failed for Azure Modules."
+          echo "Validation failed"
           exit 1
         fi
       working-directory: ${{ github.workspaces }}
@@ -39,7 +39,7 @@ jobs:
       run: |
         ./.github/tf-validate-all.sh ./microsoft-azure/quickstarts
         if [ $? -ne 0 ]; then
-          echo "Validation failed for Azure Modules."
+          echo "Validation failed"
           exit 1
         fi
       working-directory: ${{ github.workspaces }}
@@ -48,7 +48,7 @@ jobs:
       run: |
         ./.github/tf-validate-all.sh ./microsoft-azure/workloads
         if [ $? -ne 0 ]; then
-          echo "Validation failed for Azure Modules."
+          echo "Validation failed"
           exit 1
         fi
       working-directory: ${{ github.workspaces }}
