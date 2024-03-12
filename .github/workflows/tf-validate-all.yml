@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: action/checkout@v3
+    - uses: action/checkout@v4
 
     - uses: hashicorp/setup-terraform@v3
 
