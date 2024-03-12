@@ -15,8 +15,12 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        shell: bash
+
     steps:
-    - name: action/checkout
+    - name: Checkout
       uses: action/checkout@v4
 
     - name: Setup Terraform
