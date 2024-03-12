@@ -17,24 +17,31 @@
 # - https://build5nines.com/terraform-deploy-azure-storage-account-and-blob-container/
 # #################################################################################
 
+terraform {
+  required_providers {
+    # AzureRM provider 3.x
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~>3.0.0"
+    }
+  }
+}
+
 provider "azurerm" {
-  # AzureRM provider 2.x
-  version = "~>2.0"
-  # v2.x required "features" block
   features {}
 }
 
 locals {
-    resource_group_name       = "b59_iot"
+    resource_group_name       = "b59_storage"
     location                  = "eastus"
     
-    storage_account_name      = "b59_storage_website"
+    storage_account_name      = "b59storagewebsite"
     account_kind              = "StorageV2"
     account_tier              = "Standard"
     account_replication_type  = "LRS"
     enable_https_traffic_only = true
 
-    container_name = "myBlobs"
+    container_name = "myblobs"
     container_access_type = "private"
 }
 
