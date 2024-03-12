@@ -22,7 +22,7 @@ terraform {
     # AzureRM provider 3.x
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>3.0.0"
+      version = "~>3"
     }
   }
 }
@@ -35,7 +35,7 @@ locals {
     resource_group_name       = "b59_functions"
     location                  = "eastus"
     
-    function_app_name         = "b59_func_app"
+    function_app_name         = "b59-func-app"
     app_service_plan_name     = "b59_func_app_plan"
     storage_account_name      = "b59funcappsa"
 }

@@ -30,7 +30,7 @@ terraform {
     # Azure Resource Manager 3.x
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 3.0"
+      version = "~> 2.0"
     }
     # Random 3.x
     random = {

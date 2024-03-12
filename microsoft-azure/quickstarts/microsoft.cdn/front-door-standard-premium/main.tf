@@ -30,12 +30,6 @@ provider "azurerm" {
   features {}
 }
 
-# Configure the Microsoft Azure Resource Manager Provider
-provider "azurerm" {
-  features {}
-  skip_provider_registration = true
-}
-
 locals {
     resource_group_name       = "b59_frontdoor"
         

@@ -21,7 +21,7 @@ terraform {
     # AzureRM provider 3.x
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~>3.0.0"
+      version = "~>3"
     }
   }
 }
@@ -34,11 +34,11 @@ locals {
     resource_group_name     = "b59_iot"
     location                = "eastus"
     
-    iot_hub_name            = "b59_iot_hub"
+    iot_hub_name            = "b59-iot-hub"
     iot_hub_sku             = "S1"
     iot_hub_capacity        = 1
 
-    iot_hub_dps_name        = "b59_iot_hub_dps"
+    iot_hub_dps_name        = "b59-iot-hub-dps"
     iot_hub_dps_sku         = "S1"
     iot_hub_dps_capacity    = 1
 }
