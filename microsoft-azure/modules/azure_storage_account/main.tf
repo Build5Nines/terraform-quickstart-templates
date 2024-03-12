@@ -57,12 +57,6 @@ variable "min_tls_version" {
   description = "The minimum supported TLS version for the storage account."
 }
 
-variable "allow_blob_public_access" {
-  type        = bool
-  default     = false
-  description = "Flag specifying to Allow or Disallow public access to all blobs or containers in the storage account."
-}
-
 variable "is_hns_enabled" {
   type        = bool
   default     = false
@@ -195,7 +189,6 @@ resource azurerm_storage_account sa {
   access_tier               = var.access_tier
   enable_https_traffic_only = var.enable_https_traffic_only
   min_tls_version           = var.min_tls_version
-  allow_blob_public_access  = var.allow_blob_public_access
   is_hns_enabled            = var.is_hns_enabled
 
   dynamic "custom_domain" {
