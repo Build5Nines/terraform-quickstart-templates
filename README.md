@@ -2,14 +2,12 @@
 
 This project contains quickstart templates to use for more easily building and learning [Terraform](https://build5nines.com/get-started-with-terraform-on-microsoft-azure/) for building [Intrastructure as Code (IaC)](https://build5nines.com/what-is-infrastructure-as-code/) deployments.
 
-_Currently, the project is mostly focused on using the `azurerm` Terraform Provider for managing Microsoft Azure resources._
-
 ## Project Organization
 
 This project contains helpful Terraform examples and templates that are organized in the following folder structure:
 
-- Cloud Infrastructure
-  - [Microsoft Azure](microsoft-azure/readme.md) - This is where the Microsoft Azure resource specific quickstarts and other templates reside.
+- **Cloud Infrastructure**
+  - **[Microsoft Azure](microsoft-azure/readme.md)** - This is where the Microsoft Azure resource specific quickstarts and other templates reside. _The `azurerm` provider is primarily used._
     - [Modules](microsoft-azure/modules/readme.md) - These are reusable Terraform Modules for provisioning specific Microsoft Azure resources.
     - [Quickstarts](microsoft-azure/quickstarts/readme.md) - These are sample Terraform templates that can be used to quickly provision single or sets of Microsoft Azure resources.
     - [Workloads](microsoft-azure/workloads/readme.md) - These are example Terraform workload templates that model specific workload deployments to Microsoft Azure.
