@@ -1,0 +1,42 @@
+name: Validate - TF - Azure - Quickstarts
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'microsoft-azure/quickstarts/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'microsoft-azure/quickstarts/**'
+  schedule:
+    - cron: 0 0 1 * * # 1st of the Month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+
+    - name: Validate
+      run: | 
+        ./.github/tf-validate-all.sh ./microsoft-azure/quickstarts
+        if [ $? -ne 0 ]; then
+          echo "Validation failed"
+          exit 1
+        fi
+      working-directory: ${{ github.workspaces }}
