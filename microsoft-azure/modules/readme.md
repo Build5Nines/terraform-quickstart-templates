@@ -4,8 +4,7 @@ These are reusable Terraform Modules for provisioning specific Microsoft Azure r
 
 ## Example Usage
 
-These Terraform Modules require using the `azurerm` provider version `3.0.0`. Including the following `required_providers` block is recommended in your Terraform project to be sure to use the correct Terraform version.
-
+These Terraform Modules require using the `azurerm` provider version `3.x`. Including the following `required_providers` block is recommended in your Terraform project to be sure to use the correct Terraform version.
 
 ```terraform
 # We strongly recommend using the required_providers block to set the
@@ -39,3 +38,5 @@ module "my_resource_group" {
     }
 }
 ```
+
+> **Production Warning**: While you can reference these modules directly form your Terraform code, you will want to create your own Git repo or other source for the modules you use. You should not rely on the `main` branch of this repo for the modules you use in Production environments; as breaking changes could be made without notice.
