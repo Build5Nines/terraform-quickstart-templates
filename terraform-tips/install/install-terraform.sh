@@ -59,7 +59,7 @@ output_zip=${output_dir}/terraform_${latest_version}_${architecture}.zip
 
 curl ${download_url} -o ${output_zip}
 
-unzip "${output_zip}" -d ${output_dir}
+unzip "${output_zip}" -d ${output_dir} -o
 
 rm ${output_zip}
 
