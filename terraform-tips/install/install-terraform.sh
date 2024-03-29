@@ -15,6 +15,8 @@
 # License: MIT License (https://github.com/Build5Nines/terraform-quickstart-templates/blob/main/LICENSE)
 # **********************************************************
 
+set -e
+
 to_lowercase() {
     echo "$1" | tr '[:upper:]' '[:lower:]'
 }
