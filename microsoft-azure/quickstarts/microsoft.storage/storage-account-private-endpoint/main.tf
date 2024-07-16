@@ -60,6 +60,13 @@ resource azurerm_storage_account "primary" {
   account_tier              = local.account_tier
   account_replication_type  = local.account_replication_type
   enable_https_traffic_only = local.enable_https_traffic_only
+
+  network_rules {
+    default_action             = "Deny"
+    virtual_network_subnet_ids = [azurerm_subnet.primary.id]
+    bypass                     = ["None"]
+    ip_rules                   = []
+  }
 }
 
 
@@ -75,6 +82,7 @@ resource azurerm_subnet "primary" {
   resource_group_name  = azurerm_resource_group.primary.name
   virtual_network_name = azurerm_virtual_network.primary.name
   address_prefixes     = ["10.0.1.0/24"]
+  service_endpoints    = ["Microsoft.Storage"]
 }
 
 resource azurerm_private_endpoint "primary" {
