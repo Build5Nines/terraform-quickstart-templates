@@ -58,14 +58,14 @@ module "azure_primary" {
   source       = "Build5Nines/naming/azure"
   organization = local.organization_abbreviation
   environment  = var.environment
-  location     = "East US" # or "eastus"
+  location     = var.location
 
   # Define naming convention pattern
   name_suffix = ["{org}", "{loc}", "{env}"]
   # Example output: {abbr}-b59-eus-prod
-  # where {org}=b59, {loc}=eus, {env}=prod
+  # where {org}=b59, {loc}=var.location, {env}=prod
   # You can customize the pattern as needed
-  # Resource Group name example: rg-b59-eus-prod
+  # If 'var.location' is 'eastus', then Resource Group name example: rg-b59-eus-prod
 }
 
 # Define the Secondary Azure Region and Naming Convention
